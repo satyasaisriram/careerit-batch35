@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <title>Form with CSS</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Registration</legend>
+        <form name="regForm">
+            <table>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td>
+                        <input type="text" name="fname" placeholder="enter first name">
+        
+                    </td>
+                    <td> <span>(---enter valid first name---)</span></td>
+                </tr>
+                <tr>
+                    <td><label>Last Name</label></td>
+                    <td>
+                        <input type="text" name="Lname" placeholder="enter last name">
+                    </td>
+                    <td><span>(--enter valid last name--)</span></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td>
+                        <input type="password" name="pwd" placeholder="enter Password">
+                    </td>
+                    <td><span>(--enter valid Password--)</span></td>
+                </tr>
+                <tr>
+                    <td><label>Confirm Password</label></td>
+                    <td>
+                        <input type="password" name="Pwd" placeholder="enter confirm Password">
+                    </td>
+                    <td><span>(--password and confirm password must be same)</span></td>
+                </tr>
+                <tr>
+                    <td><label>Email</label></td>
+                    <td>
+                        <input type="email" name="email" placeholder="enter email">
+                    </td>
+                    <td><span>(--enter valid Email)</span></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                    <td><span>(---select gender----)</span></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><label>Languages</label></td>
+                    <td>
+                        <input type="checkbox" name="Languages" value="C">C 
+                        <input type="checkbox" name="Languages" value="C++">C++ 
+                    </td>
+                    <td rowspan="2"><span>(---select atleast one Language)</span></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Languages" value="JAVA">Java 
+                        <input type="checkbox" name="Languages" value="Python">Python
+                    </td>
+        
+                </tr>
+                <tr>
+                    <td><label>Country</label></td>
+                    <td>
+                        <select name="country">
+                        <option value="">select country</option>
+                        <option value="ind">India</option>
+                        <option value="usa">America</option>
+                        <option value="uk">London</option>
+                        <option value="jap">Japan</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td> <label>DOB</label></td>
+                    <td> <input type="date" name="udob"></td>
+                    <td><span>(--enter valid DOB----)</span></td>
+                </tr>
+            </table>
+            
+        </form>
+    </fieldset>
+</body>
+</html>
